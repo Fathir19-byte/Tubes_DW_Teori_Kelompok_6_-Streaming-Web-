@@ -86,9 +86,6 @@ if (showMoreBtn && hiddenContent) {
 
         // Cek apakah konten sudah terlihat (class 'visible' ada)
         if (hiddenContent.classList.contains('visible')) {
-            // Konten terlihat: Sembunyikan tombol "Show More"
-            // Pilihan A: Ubah teks menjadi "Show Less" (Jika ingin bisa sembunyikan lagi)
-            // showMoreBtn.textContent = 'Show Less'; 
 
             // Pilihan B: Sembunyikan tombol 'Show More' setelah semua konten ditampilkan
             if (showMoreContainer) {
@@ -96,10 +93,6 @@ if (showMoreBtn && hiddenContent) {
             }
             
         } else {
-            // Konten disembunyikan: Kembalikan tombol ke "Show More" (Pilihan A)
-            // showMoreBtn.textContent = 'Show More';
-            
-            // Pilihan B tidak perlu kode di sini
         }
     });
 }
