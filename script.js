@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             rating: "9.1/10",
             desc: "Loid memutuskan untuk membantu Anya memenangkan kompetisi memasak...",
             genres: ["Anime", "Action", "Comedy", "Family"], 
-            poster: "../Asset/PosterFilm/Spy_×_Family_Code_White_movie_poster.png",
-            background: "../Asset/BackgroundFilm/SpyxFamilyBackground.jpeg",
-            trailer: "../Asset/Trailer/SpyXFamily_Trailer.mp4" 
+            poster: "./Asset/PosterFilm/Spy_×_Family_Code_White_movie_poster.png",
+            background: "./Asset/BackgroundFilm/SpyxFamilyBackground.jpeg",
+            trailer: "./Asset/Trailer/SpyXFamily_Trailer.mp4" 
         },
         { 
             id: 2,
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             rating: "8.8/10",
             desc: "Pertarungan legendaris di tempat sampah! Karasuno vs Nekoma...",
             genres: ["Anime", "Sports", "Drama"], 
-            poster: "../Asset/PosterFilm/haikyu-the-dumpster-battle.jpeg",
-            background: "../Asset/BackgroundFilm/HaikyuBackground.jpg", 
-            trailer: "../Asset/Trailer/Haikyu_Trailer.mp4"
+            poster: "./Asset/PosterFilm/haikyu-the-dumpster-battle.jpeg",
+            background: "./Asset/BackgroundFilm/HaikyuBackground.jpg", 
+            trailer: "./Asset/Trailer/Haikyu_Trailer.mp4"
         },
         { 
             id: 3,
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
             rating: "7.9/10",
             desc: "Empat sekawan penjaga rumah hantu mencari cara baru menakuti pengunjung...",
             genres: ["Comedy", "Horror"], 
-            poster: "../Asset/PosterFilm/Agak_Laen_(2024).jpg",
-            background: "../Asset/BackgroundFilm/AgakLaenBackground.jpg",
-            trailer: "../Asset/Trailer/AgakLaen_Trailer.mp4" 
+            poster: "./Asset/PosterFilm/Agak_Laen_(2024).jpg",
+            background: "./Asset/BackgroundFilm/AgakLaenBackground.jpg",
+            trailer: "./Asset/Trailer/AgakLaen_Trailer.mp4" 
         },
     ];
 
