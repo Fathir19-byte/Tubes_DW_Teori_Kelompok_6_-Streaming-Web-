@@ -1,0 +1,86 @@
+/* biar container login ditengah */
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: white;
+
+  background:
+    radial-gradient(circle at top, rgba(220, 20, 60, 0.25), transparent 60%),
+    radial-gradient(circle at bottom, rgba(0, 120, 255, 0.2), transparent 55%),
+    linear-gradient(135deg, #050505, #0f0f0f);
+}
+
+/* login */
+.login-container {
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+
+  background: rgba(15, 15, 15, 0.85);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+/* form group */
+.input-group {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* inputan */
+.input-group input {
+  width: 100%;
+  padding: 8px 4px;
+
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #555;
+
+  font-size: 15px;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+.input-group input:focus {
+  border-bottom-color: crimson;
+}
+
+/* BUTTON */
+.login-container button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 10px;
+
+  background: crimson;
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: darkred;
+}
