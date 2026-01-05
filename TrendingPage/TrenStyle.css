@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(15,15,15,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo { height: 40px; }
+.nav-left { display: flex; align-items: center; gap: 30px; }
+.nav-menu a { margin-right: 25px; font-size: 15px; font-weight: 600; opacity: 0.85; }
+.nav-menu a:hover { color: #ff3d3d; }
+.nav-right { display: flex; align-items: center; gap: 20px; }
+
+.search-box {
+    display: flex; align-items: center; background: #1a1a1a; padding: 8px 14px; border-radius: 30px;
+}
+.search-box input { background: none; outline: none; border: none; color: white; }
+
+.login-btn {
+    padding: 6px 18px; border-radius: 20px; border: 1px solid #ff3d3d; color: #ff3d3d; transition: 0.3s;
+}
+.login-btn:hover { background: #ff3d3d; color: white; }
+
+
+/* ARTICLE SECTION */
+article .container-fluid{
+    background: url(TrendingBackground.jpeg) center/cover;
+    padding-top : 150px;
+    min-height: 400px;
+}
+
+article h2 {
+    font-size: 70px;
+    font-weight: 700;;
+}
+
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff3d3d;
+    width: 400px;
+    margin: 20px 0 !important;
+    margin-left: 470px !important;
+    border-radius: 8px;
+}
+
+.subjudul.text-center{
+    font-size: 20px;
+}
+
+/* CATEGORY BAR */
+.category-bar { margin: 40px 60px 20px; display: flex; gap: 20px; overflow-x: auto; }
+.category-bar span {
+    padding: 8px 18px; background: #1a1a1a; border-radius: 25px; font-size: 14px; white-space: nowrap; opacity: 0.8; cursor: pointer;
+}
+.category-bar span.active, .category-bar span:hover { background: #ff3d3d; opacity: 1; }
+
+.hero {
+    min-height: 80vh; /* Pastikan ada tinggi agar background terlihat */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.8s ease-in-out; /* Animasi halus saat ganti */
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 100px 5%;
+}
+
+/* Overlay agar teks tetap terbaca jika gambar terang */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.3) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Supaya teks di atas overlay */
+    display: flex;
+    gap: 30px;
+}
+
+.hero-poster img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.hero-info { color: white; }
+.hero-info h1 { font-size: 40px; font-weight: 700; margin-bottom: 15px; line-height: 1.1; }
+
+.hero-meta { font-size: 20px; margin-bottom: 20px; font-weight: 500; color: #e0e0e0; }
+.hero-meta span { color: #ffff; font-size: 20px; font-weight: bold; margin-left: 5px; }
+
+.genres { display: flex; gap: 12px; margin-bottom: 25px; }
+.genres span {
+    padding: 8px 20px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 30px; font-size: 14px; font-weight: 600; color: white;
+}
+
+.hero-desc {
+    margin-bottom: 30px; max-width: 600px; font-size: 16px; line-height: 1.6; color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons { display: flex; gap: 20px; }
+
+.btn-outline {
+    padding: 12px 35px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer;
+    border: none; background: #333333; color: white; display: flex; align-items: center; gap: 8px; transition: 0.3s;
+}
+.btn-primary {
+    padding: 12px 40px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer;
+    border: none; background: #ff3d3d; color: white; box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4); 
+    display: flex; align-items: center; gap: 8px; transition: 0.3s;
+}
+.btn-outline:hover { background: rgba(100, 100, 100, 0.8); }
+.btn-primary:hover { background: #e62e2e; transform: scale(1.05); }
