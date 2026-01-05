@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
        1. DATA FILM LENGKAP (MERGED & FIXED)
        ========================================= */
     const movies = [
-        // --- DATA ASLI KAMU (ID 1-19) ---
         { 
             id: 1,
             title: "Spy x Family Code: White", 
@@ -156,8 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
             rating: "6.3/10", 
             desc: "Gru dan keluarga barunya menghadapi musuh baru Maxime Le Mal.",
             genres: ["Adventure", "Comedy", "Family"],
-            poster: "./Asset/PosterFilm/Despicable-Me-4 Poster.jpg",
-            background: "./Asset/BackgroundFilm/Despicable-Me-4L.jpeg", 
+            poster: "./Asset/PosterFilm/Despicable-Me-4.jpg",
+            background: "./Asset/BackgroundFilm/Despicable-Me-4L.jpg", 
             trailerId: "qQlr9-rF32A",
             filmId: "qQlr9-rF32A"
         },
@@ -181,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2h 7m",
             rating: "8.2/10", 
             desc: "Seorang pemuda merawat neneknya demi warisan namun menemukan hal yang lebih berharga.",
-            genres: ["Drama", "Family"],
+            genres: ["Drama", "Family", "Slice of Life"],
             poster: "./Asset/PosterFilm/Before grandma dies poster.jpg",
             background: "./Asset/BackgroundFilm/Before grandma diesL.jpeg", 
             trailerId: "72a5y3-yC7I",
@@ -220,11 +219,11 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "4 Episode", 
             rating: "7.8/10", 
             desc: "Dua sahabat tinggal bersama dan menemukan cinta.",
-            genres: ["K-Drama", "Romance"],
-            poster: "./Asset/PosterFilm/Soundtrack-1-001 Poster.jpeg",
-            background: "./Asset/BackgroundFilm/Soundtrack #1L.jpeg", 
-            trailerId: "3JjO4wbLg60",
-            filmId: "3JjO4wbLg60"
+            genres: ["K-Drama", "Romance", "Slice of Life"],
+            poster: "./Asset/PosterFilm/Soundtrack-1.jpg",
+            background: "./Asset/BackgroundFilm/soundtrack01L.jpg", 
+            trailerId: "jcQhT_HZx8s",
+            filmId: "jcQhT_HZx8s"
         },
         {
             id: 18,
@@ -247,13 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
             rating: "7.3/10", 
             desc: "James Bond kembali beraksi menghadapi penjahat dengan senjata biologis.",
             genres: ["Action", "Adventure", "Thriller"],
-            poster: "./Asset/PosterFilm/NoTimetoDie.jpg",
-            background: "./Asset/BackgroundFilm/NoTimeToDie.jpeg", 
+            poster: "./Asset/PosterFilm/NoTimeToDie.jpeg",
+            background: "./Asset/BackgroundFilm/NoTimetoDie.jpg", 
             trailerId: "BIhNsAtPbPI",
             filmId: "BIhNsAtPbPI"
         },
-
-        // --- DATA TEMAN (ID 20-34) YANG SUDAH DIPERBAIKI (Added: Duration, Trailer, Path) ---
         {
             id: 20,
             title: "A Man Called Otto",
