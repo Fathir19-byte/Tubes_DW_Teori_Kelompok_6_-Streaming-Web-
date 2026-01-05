@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genres: ["Action", "Drama", "Sport"],
             poster: "./Asset/PosterFilm/F1TheMovie.jpg",
             background: "./Asset/BackgroundFilm/F1TheMovieL.jpeg", 
-            trailerId: "h1QzGGfrsbk", // ID Trailer Resmi
+            trailerId: "h1QzGGfrsbk", 
             filmId: "h1QzGGfrsbk"
         }
     ];
