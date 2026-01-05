@@ -51,40 +51,47 @@ a {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 85vh;
+    min-height: 85vh; /* Style kamu tetap 85vh */
     padding: 150px 60px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    overflow: hidden;
+    overflow: hidden; /* Penting agar zoom video tidak bocor */
     /* Default Background */
     background: url("./Asset/BackgroundFilm/SpyxFamilyBackground.jpeg") center/cover no-repeat;
     transition: background 0.5s ease-in-out;
 }
 
-/* UPDATE: CSS untuk YouTube Iframe agar Fullscreen & Responsif */
+/* ============================================================
+   INI BAGIAN YANG SAYA PERBAIKI AGAR FULL SCREEN (NO BLACK BAR)
+   ============================================================ */
 .hero-bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Menengahkan video */
     
-    /* Trik agar iframe selalu menutupi layar (Zooming/Aspect Ratio) */
+    /* Rumus Matematika Paksa Rasio */
     width: 100vw; 
-    height: 100vh;
-    min-width: 177.77vh; /* 16:9 ratio */
-    min-height: 56.25vw; /* 16:9 ratio */
+    height: 56.25vw; /* 16:9 rasio dari lebar */
     
-    z-index: 0; 
-    opacity: 0; 
-    transition: opacity 1s ease-in-out;
-    pointer-events: none; /* Agar user tidak klik iklan/pause sembarangan di background */
+    /* Pastikan minimal setinggi & selebar layar agar tidak ada celah */
+    min-height: 100vh;
+    min-width: 177.77vh; /* 16:9 rasio dari tinggi */
+    
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
 }
+/* ============================================================ */
 
-.hero-bg-video.video-active {
-    opacity: 1; 
-    z-index: 0; 
+/* Class ini akan ditambahkan oleh JS saat tombol trailer diklik */
+.video-active {
+    opacity: 1 !important;
+    z-index: 0; /* Pindah ke layer 0 agar di atas background img, tapi di bawah gradient */
+    pointer-events: none; /* Tetap none agar tidak menghalangi klik tombol */
 }
 
 /* Overlay Gradient */
@@ -96,12 +103,12 @@ a {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(15,15,15,0.3) 0%, #0f0f0f 100%);
-    z-index: 1; 
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     display: flex;
     gap: 60px;
     align-items: center;
@@ -111,7 +118,7 @@ a {
 
 .hero-poster img {
     width: 320px; height: 480px; object-fit: cover; border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 20px rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .hero-info { color: white; }
@@ -122,7 +129,7 @@ a {
 
 .genres { display: flex; gap: 12px; margin-bottom: 25px; }
 .genres span {
-    padding: 8px 20px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); 
+    padding: 8px 20px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 30px; font-size: 14px; font-weight: 600; color: white;
 }
 
@@ -138,7 +145,7 @@ a {
 }
 .btn-primary {
     padding: 12px 40px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer;
-    border: none; background: #ff3d3d; color: white; box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4); 
+    border: none; background: #ff3d3d; color: white; box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4);
     display: flex; align-items: center; gap: 8px; transition: 0.3s;
 }
 .btn-outline:hover { background: rgba(100, 100, 100, 0.8); }
@@ -198,9 +205,9 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000; 
-    z-index: 9999; 
-    display: none; 
+    background: #000;
+    z-index: 9999;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
