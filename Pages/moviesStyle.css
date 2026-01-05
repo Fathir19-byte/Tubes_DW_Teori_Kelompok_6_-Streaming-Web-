@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(15,15,15,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo { height: 40px; }
+
+.nav-left, .nav-right { display: flex; align-items: center; gap: 20px; }
+.nav-left { gap: 30px; }
+
+.nav-menu a {
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.85;
+    color: white;
+}
+.nav-menu a:hover, .active-link { color: #ff3d3d !important; opacity: 1; }
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 8px 14px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+.search-box:focus-within { border-color: #ff3d3d; }
+.search-box input { background: none; outline: none; border: none; color: white; width: 150px; }
+
+.login-btn {
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1px solid #ff3d3d;
+    color: #ff3d3d;
+    font-weight: 500;
+}
+.login-btn:hover { background: #ff3d3d; color: white; }
+
+.movies-header {
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+.movies-header h1 { color: #ff3d3d; font-size: 3rem; }
+
+.accent-divider {
+    height: 4px; width: 80px; background: #ff3d3d; margin: 15px auto; border-radius: 2px;
+}
+
+.category-container {
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.category-bar {
+    display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px;
+    white-space: nowrap; max-width: 100%;
+}
+.category-bar::-webkit-scrollbar { display: none; }
+.category-bar span {
+    padding: 8px 20px;
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.3s;
+}
+.category-bar span:hover, .category-bar span.active {
+    background: #ff3d3d; color: white; border-color: #ff3d3d;
+}
+
+.movie-card {
+    transition: transform 0.3s ease; cursor: pointer; position: relative;
+}
+.poster-wrapper {
+    overflow: hidden; border-radius: 12px; position: relative; aspect-ratio: 2/3; background: #1a1a1a;
+}
+.poster-wrapper img {
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;
+}
+.movie-card:hover .poster-wrapper img { transform: scale(1.1); filter: brightness(0.7); }
+
+.movie-info h3 {
+    font-size: 16px; margin-top: 12px; margin-bottom: 6px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: white;
+}
+.movie-meta {
+    display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #aaa;
+}
+.badge-genre {
+    background: rgba(255, 61, 61, 0.15); color: #ff3d3d;
+    padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600;
+}
+
+.footer {
+    background: #ff2f2f; padding: 50px 20px 20px; text-align: center; margin-top: 80px;
+}
+.footer-container { max-width: 1200px; margin: auto; }
+.footer-top {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; margin-bottom: 40px;
+}
+.footer-social a { color: white; margin-right: 20px; font-size: 22px; }
+.footer-menu { list-style: none; display: flex; gap: 25px; padding: 0; margin: 0; }
+.footer-menu li { position: relative; }
+.footer-menu li:not(:last-child)::after {
+    content: "|"; position: absolute; right: -15px; color: rgba(255,255,255,0.6);
+}
+.footer-menu a { color: white; font-size: 16px; font-weight: 500; }
+.footer-logo img { height: 40px; }
+.footer-copy { font-size: 14px; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 25px; opacity: 0.9; }
+
+@media (max-width: 992px) {
+    .navbar { padding: 15px 30px; }
+    .nav-menu { display: none; }
+    .category-container { justify-content: flex-start; padding: 0 20px; }
+    .footer-top { flex-direction: column; text-align: center; }
+    .footer-menu { flex-direction: column; gap: 15px; }
+    .footer-menu li:not(:last-child)::after { content: none; }
+}
