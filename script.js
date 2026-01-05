@@ -212,6 +212,45 @@ document.addEventListener('DOMContentLoaded', () => {
             trailerId: "CHekzSiZjrY",
             filmId: "CHekzSiZjrY"
         },
+        {
+            id: 17,
+            title: "Soundtrack #1", 
+            year: "2022", 
+            duration: "4 Episode", 
+            rating: "7.8/10", 
+            desc: "Dua sahabat yang telah berteman selama 20 tahun harus tinggal bersama dalam satu rumah selama dua minggu untuk menulis lirik lagu, di mana perasaan cinta perlahan mulai tumbuh di antara mereka.",
+            genres: ["K-Drama", "Romance"],
+            poster: "./Asset/PosterFilm/Soundtrack-1-001 Poster.jpeg",
+            background: "./Asset/BackgroundFilm/Soundtrack #1L.jpeg", 
+            trailerId: "jcQhT_HZx8s",
+            filmId: "jcQhT_HZx8s"
+        },
+        {
+            id: 18,
+            title: "The Angel Next Door Spoils Me Rotten", 
+            year: "2023", 
+            duration: "12 Episode", 
+            rating: "7.9/10", 
+            desc: "Amane Fujimiya tinggal sendirian dengan gaya hidup berantakan, sampai gadis populer di sekolahnya, Mahiru Shiina (Si Malaikat), yang tinggal tepat di sebelah apartemennya, mulai merawat dan memasakkan makanan untuknya.",
+            genres: ["Anime", "Romance", "Slice of Life"],
+            poster: "./Asset/PosterFilm/Otonari no Tenshi Sama Poster.webp",
+            background: "./Asset/BackgroundFilm/Otonari-no-Tenshi-SamaL.jpeg", 
+            trailerId: "F7Uvx8zWYRU",
+            filmId: "F7Uvx8zWYRU"
+        },
+        {
+            id: 19,
+            title: "No Time to Die", 
+            year: "2021", 
+            duration: "2h 43m", 
+            rating: "7.3/10", 
+            desc: "James Bond yang telah pensiun terpaksa kembali beraksi ketika teman lamanya dari CIA meminta bantuan, menuntunnya ke jejak penjahat misterius yang memegang teknologi senjata biologis berbahaya.",
+            genres: ["Action", "Adventure", "Thriller"],
+            poster: "./Asset/PosterFilm/NoTimeToDie.jpeg",
+            background: "./Asset/BackgroundFilm/NoTimetoDie.jpg", 
+            trailerId: "BIhNsAtPbPI",
+            filmId: "BIhNsAtPbPI"
+        },
         
 
 
