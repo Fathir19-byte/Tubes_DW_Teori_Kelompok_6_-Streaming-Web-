@@ -84,3 +84,23 @@ body {
 .login-container button:hover {
   background: darkred;
 }
+
+/* Custom styles untuk password criteria */
+#passwordCriteria small {
+  font-size: 11px;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Bootstrap override untuk input error */
+.is-invalid {
+  border-color: #dc3545 !important;
+}

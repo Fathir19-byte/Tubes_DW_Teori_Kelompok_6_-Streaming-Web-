@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="login.css">
 </head>
 
-
 <body class="bg-dark d-flex justify-content-center align-items-center min-vh-100">
     <div class="card bg-black bg-opacity-75 text-white p-4 shadow-lg" style="width: 100%; max-width: 400px;">
     
@@ -19,11 +18,24 @@
         <div class="mb-3">
             <label class="form-label">Email</label>
             <input type="email" id="email" class="form-control bg-transparent text-white" placeholder="email@example.com" required>
+            <div id="emailError" class="invalid-feedback d-none"></div>
         </div>
 
         <div class="mb-4">
             <label class="form-label">Password</label>
             <input type="password" id="password" class="form-control bg-transparent text-white" placeholder="••••••••" required>
+            
+            <!-- Password criteria display (sembunyi saat awal) -->
+            <div id="passwordCriteria" class="mt-2 d-none">
+                <small class="d-block">Kriteria password:</small>
+                <small id="length" class="d-block text-danger">❌ Minimal 8 karakter</small>
+                <small id="uppercase" class="d-block text-danger">❌ Minimal 1 huruf kapital</small>
+                <small id="lowercase" class="d-block text-danger">❌ Minimal 1 huruf kecil</small>
+                <small id="number" class="d-block text-danger">❌ Minimal 1 angka</small>
+                <small id="special" class="d-block text-danger">❌ Minimal 1 simbol (!@#$%^&*...)</small>
+            </div>
+            
+            <div id="passwordError" class="invalid-feedback d-none"></div>
         </div>
 
         <button type="submit" class="btn btn-primary w-100">
