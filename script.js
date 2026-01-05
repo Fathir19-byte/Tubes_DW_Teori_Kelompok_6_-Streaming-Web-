@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Spy x Family Code: White", 
             year: "2023", 
             rating: "9.1/10",
-            desc: "Loid memutuskan untuk membantu Anya memenangkan kompetisi memasak...",
+            desc: "Perjalanan liburan keluarga Forger ke wilayah Frigis agar Anya bisa mencicipi makanan khas untuk memenangkan kompetisi memasak di Akademi Eden, namun liburan itu berubah menjadi misi penyelamatan dunia saat Anya menemukan rahasia yang mengancam perdamaian.",
             genres: ["Anime", "Action", "Comedy", "Family"], 
             poster: "./Asset/PosterFilm/Spy_×_Family_Code_White_movie_poster.png",
             background: "./Asset/BackgroundFilm/SpyxFamilyBackground.jpeg",
@@ -20,23 +20,45 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Haikyu!! The Dumpster Battle", 
             year: "2024", 
             rating: "8.8/10",
-            desc: "Pertarungan legendaris di tempat sampah! Karasuno vs Nekoma...",
+            desc: "Meskipun menghadapi persaingan yang ketat, tim voli SMA Karasuno berhasil melaju dari babak penyisihan turnamen Harutaka di prefektur Miyagi untuk mencapai babak ketiga.",
             genres: ["Anime", "Sports", "Drama"], 
             poster: "./Asset/PosterFilm/haikyu-the-dumpster-battle.jpeg",
-            background: "./Asset/BackgroundFilm/HaikyuBackground.jpg", 
-            trailer: "./Asset/Trailer/Haikyu_Trailer.mp4"
+            background: "./Asset/BackgroundFilm/haikyu-the-dumpster-battleL.jpeg",
+            trailer: "./Asset/Trailer/HAIKYU!! THE DUMPSTER BATTLE 🏐 - Cinépolis Indonesia (1).mp4"
         },
         { 
             id: 3,
             title: "Agak Laen", 
             year: "2024", 
             rating: "7.9/10",
-            desc: "Empat sekawan penjaga rumah hantu mencari cara baru menakuti pengunjung...",
+            desc: "Empat sekawan penjaga rumah hantu yang sepi pengunjung dan hampir bangkrut, yang akhirnya menemukan keuntungan tak terduga saat salah satu pengunjung meninggal karena kaget, lalu mereka menyembunyikan mayatnya dan rumah hantu mereka jadi viral.",
             genres: ["Comedy", "Horror"], 
             poster: "./Asset/PosterFilm/Agak_Laen_(2024).jpg",
-            background: "./Asset/BackgroundFilm/AgakLaenBackground.jpg",
-            trailer: "./Asset/Trailer/AgakLaen_Trailer.mp4" 
+            background: "./Asset/BackgroundFilm/Agak_Laen_(2024)L.jpeg",
+            trailer: "./Asset/Trailer/Agak Laen Trailer.mp4" 
         },
+        {
+            id: 4,
+            title: "Zootopia", 
+            year: "2016", 
+            rating: "8.0/10",
+            desc: "Di kota hewan antropomorfik, Judy Hopps, seekor kelinci polisi pemula, harus bekerja sama dengan rubah penipu bernama Nick Wilde untuk memecahkan misteri konspirasi yang mengancam keharmonisan kota.",
+            genres: ["Adventure", "Comedy", "Family"],
+            poster: "./Asset/PosterFilm/Zootopia.jpg",
+            background: "./Asset/BackgroundFilm/ZootopiaL.jpg",
+            trailer: "./Asset/Trailer/ZootopiaTrailer.mp4"
+        },
+        {
+            id: 5,
+            title: "Avengers: Endgame", 
+            year: "2019", 
+            rating: "8.4/10",
+            desc: "Setelah peristiwa Thanos yang melenyapkan setengah populasi alam semesta, para Avengers yang tersisa harus berkumpul kembali dan melakukan perjalanan waktu untuk membatalkan tindakan Thanos demi memulihkan keteraturan alam semesta.",
+            genres: ["Action", "Adventure", "Sci-Fi"],
+            poster: "./Asset/PosterFilm/endgame.jpeg",
+            background: "./Asset/BackgroundFilm/EndgameL.jpg",
+            trailer: "./Asset/Trailer/Endgametrailer.mp4"
+        }
     ];
 
     
