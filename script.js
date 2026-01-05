@@ -222,9 +222,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderMovies(data) {
         movieContainer.innerHTML = ''; 
 
-        if (data.length === 0) {
-            // Kalau data kosong, muncul pesan ini
+        // PERBAIKAN 1: Definisikan visibleMovies
+        const visibleMovies = data.slice(0, itemsToShow);
+
+        if (visibleMovies.length === 0) {
             movieContainer.innerHTML = '<p class="text-center text-white-50 mt-5">Film tidak ditemukan...</p>';
+            if(showMoreBtn) showMoreBtn.style.display = 'none';
             return;
         }
 
@@ -257,8 +260,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    displayMovies(movies);
+    // Tambahkan Logic Tombol Show More (Tadi belum ada)
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            itemsToShow += 6;
+            renderMovies(currentData);
+        });
+    }
+
+    // PERBAIKAN 2: Panggil renderMovies, bukan displayMovies
+    renderMovies(movies);
     if(movies.length > 0) updateHero(movies[0]); 
+
+
+    /* =========================================
+       7. LOGIKA FILTER & SEARCH
+       ========================================= */
+    const genreButtons = document.querySelectorAll('.category-bar span');
+    genreButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            genreButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            const selectedGenre = this.textContent.trim();
+            itemsToShow = 12; // Reset jumlah tampilan saat ganti kategori
+
+            if (selectedGenre === "Trending" || selectedGenre === "All Movies") {
+                currentData = movies;
+            } else {
+                currentData = movies.filter(movie => 
+                    movie.genres && movie.genres.includes(selectedGenre)
+                );
+            }
+            renderMovies(currentData); // Panggil renderMovies yang benar
+        });
+    });
+
+    const searchInput = document.querySelector('.search-box input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const keyword = e.target.value.toLowerCase();
+            itemsToShow = 12; 
+            
+            currentData = movies.filter(movie => 
+                movie.title.toLowerCase().includes(keyword)
+            );
+            renderMovies(currentData); // Panggil renderMovies yang benar
+        });
+    }
+});
 
 
     /* =========================================
@@ -280,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             renderMovies(currentData);
         });
-    });
+   
 
     const searchInput = document.querySelector('.search-box input');
     if (searchInput) {
