@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const noResultMessage = document.createElement('p');
     noResultMessage.textContent = "Yahh, film yang kamu cari tidak ada...";
     
-    // Styling pesan error langsung via JS agar sesuai tema
+    // Styling pesan error
     noResultMessage.style.color = "rgba(255, 255, 255, 0.7)";
     noResultMessage.style.textAlign = "center";
     noResultMessage.style.width = "100%";
