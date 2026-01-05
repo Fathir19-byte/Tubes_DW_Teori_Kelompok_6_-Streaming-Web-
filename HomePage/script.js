@@ -69,16 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// script.js
-
-// 1. Ambil elemen-elemen yang diperlukan menggunakan ID dan Class
 const showMoreBtn = document.getElementById('showMoreBtn');
 const hiddenContent = document.querySelector('.hidden-content');
 const showMoreContainer = document.querySelector('.show-more'); // Untuk menyembunyikan tombol
 
 // Cek apakah elemen-elemen ditemukan sebelum menjalankan kode
 if (showMoreBtn && hiddenContent) {
-    // 2. Tambahkan event listener saat tombol diklik
     showMoreBtn.addEventListener('click', function() {
         
         // Toggle class 'visible' pada elemen yang tersembunyi
