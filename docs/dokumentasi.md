@@ -78,7 +78,7 @@ VoidStream adalah sebuah platform streaming film modern yang dirancang untuk mem
 
 ## 4. Struktur Halaman (Sitemap)
 
-![Sitemap](docs/image/Hierarki.png)
+![Sitemap](./image/Hierarki.png)
 
 ---
 
@@ -86,73 +86,97 @@ VoidStream adalah sebuah platform streaming film modern yang dirancang untuk mem
 
 ### 5.1 Dashboard
 **Mobile**  
-![Dashboard Mobile](docs/image/DashboardMobile.png)
+![Dashboard Mobile](./image/DashboardMobile.png)
 
 **Tablet**  
-![Dashboard Tablet](docs/image/DashboardTablet.png)
+![Dashboard Tablet](./image/DashboardTablet.png)
 
 **Desktop**  
-![Dashboard Desktop](docs/image/DashboardDekstop.png)
+![Dashboard Desktop](./image/DashboardLaptop.png)
 
 ---
 
-### 5.2 Detail Restoran
+### 5.2 Movies
 **Mobile**  
-![Detail Mobile](docs/image/DetailMobile.png)
+![Movies Mobile](./image/MoviesMobile.png)
 
 **Tablet**  
-![Detail Tablet](docs/image/DetailTablet.png)
+![Movies Tablet](./image/MoviesTablet.png)
 
 **Desktop**  
-![Detail Desktop](docs/image/DetailDekstop.png)
+![Movies Desktop](./image/MoviesLaptop.png)
 
 ---
 
-### 5.3 Hasil Pencarian
+### 5.3 Trendig
 **Mobile**  
-![Hasil Pencarian Mobile](docs/image/HasilSearchMobile.png)
+![Trending Mobile](./image/TrendingMobile.png)
 
 **Tablet**  
-![Hasil Pencarian Tablet](docs/image/HasilSearchTablet.png)
+![Trending Tablet](./image/TrendingTablet.png)
 
 **Desktop**  
-![Hasil Pencarian Desktop](docs/image/HasilSearchDekstop.png)
+![Trending Desktop](./image/TrendingLaptop.png)
 
 ---
 
-### 5.4 Login
+### 5.4 Contact
 **Mobile**  
-![Login Mobile](docs/image/LoginMobile.png)
+![Contact Mobile](./image/ContactMobile.png)
 
 **Tablet**  
-![Login Tablet](docs/image/LoginTablet.png)
+![Contact Tablet](./image/ContactTablet.png)
 
 **Desktop**  
-![Login Desktop](docs/image/LoginDekstop.png)
+![Contact Desktop](./image/ContactLaptop.png)
 
 ---
 
-### 5.5 Register
+### 5.5 About
 **Mobile**  
-![Register Mobile](docs/image/RegisterMobile.png)
+![About Mobile](./image/AboutMobile.png)
 
 **Tablet**  
-![Register Tablet](docs/image/RegisterTablet.png)
+![About Tablet](./image/AboutTablet.png)
 
 **Desktop**  
-![Register Desktop](docs/image/RegisterDekstop.png)
+![About Desktop](./image/AboutLaptop.png)
 
 ---
 
-### 5.6 Profile
+### 5.6 Privasi
 **Mobile**  
-![Profile Mobile](docs/image/ProfileMobile.png)
+![Privasi Mobile](./image/PrivasiMobile.png)
 
 **Tablet**  
-![Profile Tablet](docs/image/ProfileTablet.png)
+![Privasi Tablet](./image/PrivasiTablet.png)
 
 **Desktop**  
-![Profile Desktop](docs/image/ProfileDekstop.png)
+![Privasi Desktop](./image/PrivasiLaptop.png)
+
+---
+
+### 5.7 Login
+**Mobile**  
+![Login Mobile](./image/LoginMobile.png)
+
+**Tablet**  
+![Login Tablet](./image/LoginTablet.png)
+
+**Desktop**  
+![Login Desktop](./image/LoginLaptop.png)
+
+---
+
+### 5.7 Register
+**Mobile**  
+![Register Mobile](./image/RegisterMobile.png)
+
+**Tablet**  
+![Register Tablet](./image/RegisterTablet.png)
+
+**Desktop**  
+![Register Desktop](./image/RegisterLaptop.png)
 
 ---
 
@@ -161,19 +185,28 @@ VoidStream adalah sebuah platform streaming film modern yang dirancang untuk mem
 Berikut merupakan hasil pengecekan aksesibilitas pada website Restosan:
 
 **Dashboard**  
-![Dashboard Accessibility](docs/image/AksesibilitasDashboard.png)
+![Dashboard Accessibility](./image/DashboardAksesibilitas.png)
 
-**View Details**  
-![View Details Accessibility](docs/image/AksesibilitasDetails.png)
+**Movies**  
+![Movies Accessibility](./image/MoviesAksesibilitas.png)
+
+**Trending**  
+![Trending Accessibility](./image/TrendingAksesibilitas.png)
+
+**Contact**  
+![Contact Accessibility](./image/ContactAksesibilitas.png)
+
+**About**  
+![About Accessibility](./image/AboutAksesibilitas.png)
+
+**Movies**  
+![Privasi Accessibility](./image/PrivasiAksesibilitas.png)
 
 **Login**  
-![Login Accessibility](docs/image/AksesibilitasLogin.png)
+![Login Accessibility](./image/LoginAksesibilitas.png)
 
-**View Register**  
-![Register Accessibility](docs/image/AksesibilitasRegister.png)
-
-**Profile**  
-![Profile Accessibility](docs/image/AksesibilitasProfile.png)
+**Register**  
+![Register Accessibility](./image/RegisterAksesibilitas.png)
 
 ---
 
